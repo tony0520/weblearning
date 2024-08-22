@@ -9,8 +9,15 @@
 <body>
   <h1>Angela Yu's Portfolio</h1>
   <h2>I'm a Web Developer</h2>
-  <!-- Corrected file path with the file URL scheme -->
-  <button type="button" onclick="window.open('file:///C:/Users/User/Desktop/Week%1.pdf')">Open PDF</button>
+
+  <!-- Define the URL variable within a script tag -->
+  <script type="text/javascript">
+    var URL = "file:///C:/Users/User/Desktop/Week%201.pdf";
+  </script>
+
+  <!-- Use the URL variable in the onclick function -->
+  <button type="button" onclick="window.open(URL)">Open PDF</button>
+
 </body>
 
 </html>
